@@ -1,0 +1,46 @@
+﻿<Window x:Name="MainWindow1" x:Class="InClassWeek4Day4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InClassWeek4Day4"
+        mc:Ignorable="d"
+        Title="My Cool App" Height="350" Width="525" Background="#FFB5F3A7">
+    <Grid x:Name="mainGrid" Margin="0,0,-8,-8">
+        <Grid x:Name="topGrid" Height="95" VerticalAlignment="Top" Background="#FFEA1414">
+            <Menu x:Name="menuMain" Height="20" VerticalAlignment="Top" Background="White">
+                <MenuItem Header="Item 1"/>
+                <MenuItem Header="Item 2"/>
+                <MenuItem Header="Item 3"/>
+                <MenuItem Header="Item 4"/>
+                <MenuItem Header="Item 5"/>
+                <MenuItem Header="Item 6"/>
+            </Menu>
+            <Button x:Name="topButton" Margin="10,45,420,10" Click="topButton_Click">
+                <Image x:Name="buttonImage" Source="Images/CMS_Creative_164657191_Kingfisher.jpg" />
+            </Button>
+            <TextBox x:Name="textBoxTop" HorizontalAlignment="Left" Height="23" Margin="125,62,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
+            <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="427,65,0,0" VerticalAlignment="Top" Width="73"/>
+        </Grid>
+        <Grid x:Name="bottomGrid" RenderTransformOrigin="0.5,0.5" Background="#FF55A6A2" Margin="0,95,0,0">
+            <Grid HorizontalAlignment="Left" Width="115" Background="#FF31AC0D">
+                <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="10,50,-10,0"
+                          VerticalAlignment="Top" Width="115" BorderBrush="#FF990000"
+                          Foreground="Red">
+                    <TextBlock Text="Item1"/>
+                    <TextBlock Text="Item2"/>
+                    <TextBlock Text="Item3"/>
+                    <TextBlock Text="Item4"/>
+                    <TextBlock Text="Item5"/>
+                </ComboBox>
+            </Grid>
+            <Button x:Name="button" Content="Save" Margin="0,0,167,87" HorizontalAlignment="Right" Width="75" Height="20" VerticalAlignment="Bottom" Click="button_Click"/>
+            <Ellipse Fill="#FFC2E81A" HorizontalAlignment="Left" Height="100" Margin="393,90,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+            <CheckBox x:Name="checkBox1" Content="Check ME!" HorizontalAlignment="Left" Margin="145,175,0,0" VerticalAlignment="Top" Checked="checkBox_Checked"/>
+            <CheckBox x:Name="checkBoxCopy1" Content="CheckBox2" HorizontalAlignment="Left" Margin="229,175,0,0" VerticalAlignment="Top" Checked="checkBox_Checked"/>
+            <CheckBox x:Name="checkBoxCopy2" Content="CheckBox3" HorizontalAlignment="Left" Margin="315,175,0,0" VerticalAlignment="Top" Checked="checkBox_Checked"/>
+            <GroupBox x:Name="groupBox" Header="GroupBox" HorizontalAlignment="Left" Margin="130,10,0,0" VerticalAlignment="Top" Height="45" Width="385"/>
+            <GroupBox x:Name="groupBox1" Header="GroupBox" HorizontalAlignment="Left" Margin="130,60,0,0" VerticalAlignment="Top" Height="45" Width="385"/>
+        </Grid>
+    </Grid>
+</Window>
